@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Logins.Register" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Logins.Register" %>
 
 <!DOCTYPE html>
 
@@ -28,7 +28,6 @@
                     </td>
                     <td>
                         <asp:TextBox ID="txtLast" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please Enter Lastname" ControlToValidate="txtLast" ForeColor="Red"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -37,7 +36,6 @@
                     </td>
                     <td>
                         <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please Enter Password" ControlToValidate="txtPassword" ForeColor="Red"></asp:RequiredFieldValidator>
                     </td>
 
                 </tr>
@@ -47,7 +45,7 @@
                     </td>
                     <td>
                         <asp:TextBox ID="txtConfirm" runat="server" TextMode="Password"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Please Enter Confirm Password" ControlToValidate="txtConfirm" ForeColor="Red"></asp:RequiredFieldValidator>
+                        <asp:CompareValidator ID="cvPassword" runat="server" ControlToCompare="txtPassword" ControlToValidate="txtConfirm" ErrorMessage="Password and Confirm Password must be same" ForeColor="Red"></asp:CompareValidator>
                     </td>
                 </tr>
                 <tr>
@@ -57,6 +55,8 @@
                     <td>
                         <asp:TextBox ID="txtMobile" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Please Enter Valid Mobile Number" ControlToValidate="txtMobile" ForeColor="Red"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtMobile" ErrorMessage="Please Enter a valid mobile number"
+                            forecolor="Red" ValidationExpression="\d{10}"></asp:RegularExpressionValidator>
                     </td>
                 </tr>
                 <tr>
@@ -65,14 +65,24 @@
                     </td>
                     <td>
                         <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Please Enter Email" ControlToValidate="txtEmail" ForeColor="Red"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="revEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Please Enter Valid Email" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                     </td>
                     </tr>
+                <tr>
+                    <td>
+                        <asp:Label ID="lblage" runat="server" Text="Age"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="txtAge" runat="server"></asp:TextBox>
+                        <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="txtAge" ErrorMessage="Please Enter Valid Age" ForeColor="Red" MinimumValue="18" MaximumValue="100" Type="Integer"></asp:RangeValidator>
+                    </td>
+                </tr>
                 <tr>
                     <td></td>
                     <td>
                         <asp:Button ID="btnSubmit" runat="server" Text="Submit"  />
                     </td>
+                    
                     
                 </tr>
                 
