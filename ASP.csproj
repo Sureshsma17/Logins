@@ -76,7 +76,7 @@
     <Content Include="HtmlPage2.html" />
     <Content Include="Images\.net.jpg" />
     <Content Include="Logins.aspx" />
-    <Content Include="Registration.aspx" />
+    <Content Include="Register.aspx" />
     <Content Include="SampleReg.aspx" />
     <Content Include="Web.config" />
     <Content Include="Employee.aspx" />
@@ -133,11 +133,12 @@
     <Compile Include="Calc.aspx.designer.cs">
       <DependentUpon>Calc.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Registration.aspx.cs">
-      <DependentUpon>Registration.aspx</DependentUpon>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Registration.aspx.designer.cs">
-      <DependentUpon>Registration.aspx</DependentUpon>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="SampleReg.aspx.cs">
       <DependentUpon>SampleReg.aspx</DependentUpon>
