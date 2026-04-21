@@ -70,11 +70,14 @@
     <Content Include="Cascading.aspx" />
     <Content Include="checkbox_fee_c_cpp_dotnet.aspx" />
     <Content Include="DropDownListDDMMYYYY.aspx" />
+    <Content Include="ExperiencedITJobApplication.aspx" />
     <Content Include="hiddenbutton.aspx" />
     <Content Include="HTML CONTROLS.html" />
     <Content Include="HtmlPage1.html" />
     <Content Include="HtmlPage2.html" />
     <Content Include="Images\.net.jpg" />
+    <Content Include="JobApllicationForm.aspx" />
+    <Content Include="LifeCycleEvents.aspx" />
     <Content Include="Logins.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="SampleReg.aspx" />
@@ -104,12 +107,33 @@
     <Compile Include="DropDownListDDMMYYYY.aspx.designer.cs">
       <DependentUpon>DropDownListDDMMYYYY.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ExperiencedITJobApplication.aspx.cs">
+      <DependentUpon>ExperiencedITJobApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExperiencedITJobApplication.aspx.designer.cs">
+      <DependentUpon>ExperiencedITJobApplication.aspx</DependentUpon>
+    </Compile>
     <Compile Include="hiddenbutton.aspx.cs">
       <DependentUpon>hiddenbutton.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="hiddenbutton.aspx.designer.cs">
       <DependentUpon>hiddenbutton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobApllicationForm.aspx.cs">
+      <DependentUpon>JobApllicationForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobApllicationForm.aspx.designer.cs">
+      <DependentUpon>JobApllicationForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LifeCycleEvents.aspx.cs">
+      <DependentUpon>LifeCycleEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LifeCycleEvents.aspx.designer.cs">
+      <DependentUpon>LifeCycleEvents.aspx</DependentUpon>
     </Compile>
     <Compile Include="Logins.aspx.cs">
       <DependentUpon>Logins.aspx</DependentUpon>
