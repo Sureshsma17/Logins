@@ -81,6 +81,7 @@
     <Content Include="Logins.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="SampleReg.aspx" />
+    <Content Include="ViewState.aspx" />
     <Content Include="Web.config" />
     <Content Include="Employee.aspx" />
     <Content Include="Calc.aspx" />
@@ -170,6 +171,13 @@
     </Compile>
     <Compile Include="SampleReg.aspx.designer.cs">
       <DependentUpon>SampleReg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewState.aspx.cs">
+      <DependentUpon>ViewState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewState.aspx.designer.cs">
+      <DependentUpon>ViewState.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
