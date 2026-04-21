@@ -28,8 +28,6 @@
                     </td>
                     <td>
                         <asp:TextBox ID="txtLast" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please Enter Lastname" 
-                            ControlToValidate="txtLast" ForeColor="Red"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -38,9 +36,6 @@
                     </td>
                     <td>
                         <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please Enter Password" 
-                            ControlToValidate="txtPassword" ForeColor="Red"></asp:RequiredFieldValidator>
-
                     </td>
 
                 </tr>
@@ -50,12 +45,6 @@
                     </td>
                     <td>
                         <asp:TextBox ID="txtConfirm" runat="server" TextMode="Password"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Please Enter Confirm Password" 
-                            ControlToValidate="txtConfirm" ForeColor="Red"></asp:RequiredFieldValidator>
-                        <asp:CompareValidator ID="CompareValodator1" runat="server" ControlToValidate="txtConfirm" 
-                            ControlToCompare="txtPassword" ErrorMessage="Password and Confirm Password should be same"
-                            ForeColor="Red"></asp:CompareValidator>
-                           
                     </td>
                 </tr>
                 <tr>
@@ -73,13 +62,6 @@
                     </td>
                     <td>
                         <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Please Enter Email" ControlToValidate="txtEmail" 
-                            ForeColor="Red"></asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
-                            ControlToValidate="txtEmail" ErrorMessage="Please Enter Valid Email" 
-                            ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">
-
-                        </asp:RegularExpressionValidator>  
                     </td>
                     </tr>
                 <tr>
