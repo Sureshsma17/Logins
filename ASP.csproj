@@ -85,6 +85,7 @@
     <Content Include="Web.config" />
     <Content Include="Employee.aspx" />
     <Content Include="Calc.aspx" />
+    <Content Include="SessionState.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cascading.aspx.cs">
@@ -178,6 +179,13 @@
     </Compile>
     <Compile Include="ViewState.aspx.designer.cs">
       <DependentUpon>ViewState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SessionState.aspx.cs">
+      <DependentUpon>SessionState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SessionState.aspx.designer.cs">
+      <DependentUpon>SessionState.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
