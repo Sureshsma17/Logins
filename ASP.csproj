@@ -71,6 +71,7 @@
     <Content Include="checkbox_fee_c_cpp_dotnet.aspx" />
     <Content Include="DropDownListDDMMYYYY.aspx" />
     <Content Include="ExperiencedITJobApplication.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="hiddenbutton.aspx" />
     <Content Include="HTML CONTROLS.html" />
     <Content Include="HtmlPage1.html" />
@@ -79,6 +80,7 @@
     <Content Include="JobApllicationForm.aspx" />
     <Content Include="LifeCycleEvents.aspx" />
     <Content Include="Logins.aspx" />
+    <Content Include="Numberofusers.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="SampleReg.aspx" />
     <Content Include="ViewState.aspx" />
@@ -116,6 +118,9 @@
     <Compile Include="ExperiencedITJobApplication.aspx.designer.cs">
       <DependentUpon>ExperiencedITJobApplication.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="hiddenbutton.aspx.cs">
       <DependentUpon>hiddenbutton.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -143,6 +148,13 @@
     </Compile>
     <Compile Include="Logins.aspx.designer.cs">
       <DependentUpon>Logins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Numberofusers.aspx.cs">
+      <DependentUpon>Numberofusers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Numberofusers.aspx.designer.cs">
+      <DependentUpon>Numberofusers.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Employee.aspx.cs">
