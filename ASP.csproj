@@ -67,9 +67,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ADOLogin.aspx" />
     <Content Include="Cascading.aspx" />
     <Content Include="checkbox_fee_c_cpp_dotnet.aspx" />
     <Content Include="DropDownListDDMMYYYY.aspx" />
+    <Content Include="Email.aspx" />
     <Content Include="ExperiencedITJobApplication.aspx" />
     <Content Include="Global.asax" />
     <Content Include="hiddenbutton.aspx" />
@@ -83,6 +85,7 @@
     <Content Include="Numberofusers.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="SampleReg.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="ViewState.aspx" />
     <Content Include="Web.config" />
     <Content Include="Employee.aspx" />
@@ -90,6 +93,13 @@
     <Content Include="SessionState.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADOLogin.aspx.cs">
+      <DependentUpon>ADOLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADOLogin.aspx.designer.cs">
+      <DependentUpon>ADOLogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Cascading.aspx.cs">
       <DependentUpon>Cascading.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -110,6 +120,13 @@
     </Compile>
     <Compile Include="DropDownListDDMMYYYY.aspx.designer.cs">
       <DependentUpon>DropDownListDDMMYYYY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Email.aspx.cs">
+      <DependentUpon>Email.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Email.aspx.designer.cs">
+      <DependentUpon>Email.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExperiencedITJobApplication.aspx.cs">
       <DependentUpon>ExperiencedITJobApplication.aspx</DependentUpon>
@@ -184,6 +201,13 @@
     </Compile>
     <Compile Include="SampleReg.aspx.designer.cs">
       <DependentUpon>SampleReg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewState.aspx.cs">
       <DependentUpon>ViewState.aspx</DependentUpon>
