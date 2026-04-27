@@ -16,8 +16,8 @@
                     </td>
                     <td>
                         <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>
-                        <%--<asp:RequiredFieldValidator ID="rfvFirst" runat="server" ForeColor="Red" ErrorMessage="Plesr Enter Username" ControlToValidate="txtUsername">
-                        </asp:RequiredFieldValidator>--%>
+                        <asp:RequiredFieldValidator ID="rfvFirst" runat="server" ForeColor="Red" ErrorMessage="Plesr Enter Username" ControlToValidate="txtUsername">
+                        </asp:RequiredFieldValidator>
                         
                     </td>
                 </tr>
@@ -27,8 +27,8 @@
                     </td>
                     <td>
                         <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
-                        <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ForeColor="Red" ErrorMessage="Plesr Enter Password" ControlToValidate="txtPassword">
-                        </asp:RequiredFieldValidator>--%>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ForeColor="Red" ErrorMessage="Plesr Enter Password" ControlToValidate="txtPassword">
+                        </asp:RequiredFieldValidator>
 
                     </td>
                 </tr>
@@ -44,6 +44,7 @@
                         <asp:Button ID="btndelete" runat="server" Text="Delete" OnClick="btndelete_Click"  />
                     </td>
                 </tr>
+                </table>
                 <table align="center">
                 <tr>
                     <td>
