@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ADOGridView.aspx" />
     <Content Include="ADOLogin.aspx" />
     <Content Include="Cascading.aspx" />
     <Content Include="checkbox_fee_c_cpp_dotnet.aspx" />
@@ -83,7 +84,7 @@
     <Content Include="LifeCycleEvents.aspx" />
     <Content Include="Logins.aspx" />
     <Content Include="Numberofusers.aspx" />
-    <Content Include="Register.aspx" />
+    <Content Include="ADORegister.aspx" />
     <Content Include="SampleReg.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="ViewState.aspx" />
@@ -93,6 +94,13 @@
     <Content Include="SessionState.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADOGridView.aspx.cs">
+      <DependentUpon>ADOGridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADOGridView.aspx.designer.cs">
+      <DependentUpon>ADOGridView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ADOLogin.aspx.cs">
       <DependentUpon>ADOLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -188,12 +196,12 @@
     <Compile Include="Calc.aspx.designer.cs">
       <DependentUpon>Calc.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Register.aspx.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
+    <Compile Include="ADORegister.aspx.cs">
+      <DependentUpon>ADORegister.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Register.aspx.designer.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
+    <Compile Include="ADORegister.aspx.designer.cs">
+      <DependentUpon>ADORegister.aspx</DependentUpon>
     </Compile>
     <Compile Include="SampleReg.aspx.cs">
       <DependentUpon>SampleReg.aspx</DependentUpon>

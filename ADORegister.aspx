@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Logins.Register" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ADORegister.aspx.cs" Inherits="Logins.Register" %>
 
 <!DOCTYPE html>
 
