@@ -105,7 +105,7 @@ namespace Logins
             con.Open();
             GridViewRow grd = grdData.Rows[e.RowIndex];
             int UID = Convert.ToInt32(grdData.DataKeys[e.RowIndex].Value);
-            string username = ((TextBox)grd.FindControl("txtUsername")).Text;
+            string username = ((TextBox)grd.FindControl("txtUsername")).Text;   
             string password = ((TextBox)grd.FindControl("txtPassword")).Text;
             SqlCommand cmd = new SqlCommand("Update LOGIN_BINDGRID set Username=@username,Password=@password where UID=@uid", con);
             cmd.Parameters.AddWithValue("@username", username);

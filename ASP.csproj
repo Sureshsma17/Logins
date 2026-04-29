@@ -68,7 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ADOGridView.aspx" />
+    <Content Include="ADOGridViewGUI.aspx" />
     <Content Include="ADOLogin.aspx" />
+    <Content Include="ADORegisterGridView.aspx" />
     <Content Include="Cascading.aspx" />
     <Content Include="checkbox_fee_c_cpp_dotnet.aspx" />
     <Content Include="DropDownListDDMMYYYY.aspx" />
@@ -101,12 +103,26 @@
     <Compile Include="ADOGridView.aspx.designer.cs">
       <DependentUpon>ADOGridView.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ADOGridViewGUI.aspx.cs">
+      <DependentUpon>ADOGridViewGUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADOGridViewGUI.aspx.designer.cs">
+      <DependentUpon>ADOGridViewGUI.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ADOLogin.aspx.cs">
       <DependentUpon>ADOLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ADOLogin.aspx.designer.cs">
       <DependentUpon>ADOLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADORegisterGridView.aspx.cs">
+      <DependentUpon>ADORegisterGridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADORegisterGridView.aspx.designer.cs">
+      <DependentUpon>ADORegisterGridView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Cascading.aspx.cs">
       <DependentUpon>Cascading.aspx</DependentUpon>

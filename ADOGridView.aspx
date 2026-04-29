@@ -16,8 +16,8 @@
                     </td>
                     <td>
                         <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>
-                        <%--<asp:RequiredFieldValidator ID="rfvFirst" runat="server" ForeColor="Red" ErrorMessage="Plesr Enter Username" ControlToValidate="txtUsername">
-                        </asp:RequiredFieldValidator>--%>
+                       <%-- <asp:requiredfieldvalidator id="rfvfirst" runat="server" forecolor="red" errormessage="plesr enter username" controltovalidate="txtusername">
+                        </asp:requiredfieldvalidator>--%>
                        
                         
                     </td>
@@ -28,7 +28,7 @@
                     </td>
                     <td>
                         <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
-                        <%--   <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ForeColor="Red" ErrorMessage="Plesr Enter Password" ControlToValidate="txtPassword">
+                           <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ForeColor="Red" ErrorMessage="Plesr Enter Password" ControlToValidate="txtPassword">
                         </asp:RequiredFieldValidator>--%>
 
                     </td>
@@ -57,7 +57,8 @@
                             OnPageIndexChanging="grdData_PageIndexChanging"
                             OnRowEditing="grdData_RowEditing"
                             OnRowCancelingEdit="grdData_RowCancelingEdit"
-                            OnRowUpdating="grdData_RowUpdating" OnRowDeleting="grdData_RowDeleting">
+                            OnRowUpdating="grdData_RowUpdating" 
+                            OnRowDeleting="grdData_RowDeleting">
 
                             <Columns>
                                 <asp:TemplateField HeaderText="Username">
@@ -66,7 +67,7 @@
                                         <asp:Label ID="lblUsername" runat="server" Text='<%# Bind("Username") %>'></asp:Label>
                                     </ItemTemplate>
 
-                                    <EditItemTemplate>
+                                    <EditItemTemplate>  
                                         <asp:TextBox ID="txtUsername" runat="server" Text='<%# Bind("Username") %>'></asp:TextBox>
                                     </EditItemTemplate>
                                 </asp:TemplateField>
